@@ -1,38 +1,151 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Lato', sans-serif;
+}
+.twitter{
+  display: flex;
+}
+
+.sidebar{
+  width: 25%;
+  position: fixed;
+  left: 0;
+  height: 100%;
+  border-right: 1px solid #e6ecf0;
+}
+
+.sidebar ul{
+  list-style-type: none;
+}
+
+.sidebar ul li a{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+  padding: 18px 35px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.sidebar ul li a:hover{
+  background: #e8f5fe;
+  color: #1da1f2;
+}
+.icons{
+  margin-right: 15px;
+  font-size: 25px;
+}
+
+.logo{
+  color: #1da1f2;
+}
+
+
+.sidebar_Btn{
+  margin: 15px 0;
+}
+
+.sidebar_Btn a{
+  text-decoration: none;
+  background-color: #1da1f2;
+  color: #fff;
+  padding: 13px 35px;
+  margin: 0 35px;
+  border-radius: 50px;
+  outline: none;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+/*Post Style*/
+.posts{
+  width: 50%;
+  margin-left: 25%;  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.posts__home{
+  width: 50%;
+  position: fixed;
+  top: 0;
+  padding: 15px;
+  font-weight: 700;
+  border-bottom: 1ps solid #e6ecf0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+
+.postss{
+  padding: 20px;
+  border-bottom: 1px solid white;
+}
+
+
+.posts__first{
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
 }
 
-.App-link {
-  color: #61dafb;
+.post__first__img img{
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 50%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.post__first__name{
+  margin-left: 6px;
+}
+
+
+.post__first__name span{
+  display: inline-block;
+  margin-left: 6px;
+  font-size: 13px;
+}
+
+.post__first__username{
+  margin-left: 6px;
+  color: silver;
+  font-weight: 300;
+}
+
+.verify{
+  margin-left: 3px;
+  color: #1da1f2;
+}
+
+.post__details{
+  margin: 8px 30px;
+  overflow: hidden;
+}
+
+
+.post__details__img{
+  width: 100%;
+  margin-top: 6px;
+}
+
+.post__details__img img{
+  width: 100%;
+}
+
+.post__details__msg{
+  display: inline-block;
+}
+
+.icon{
+  display: flex;
+  margin: 8px 0;
+  justify-content: space-between;
+  align-items: center;
+  
 }
